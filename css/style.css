@@ -1,0 +1,201 @@
+*{
+    margin:0;
+    font-family: 'Kanit', sans-serif;
+}
+body{
+    background-image:url(../images/evento.jpg);
+    background-size: cover;
+}
+h1{
+    font-family: 'Abril Fatface', cursive;
+    margin-left: 50px;
+}
+
+.texto{
+    color:white;
+    font-weight:700;
+     
+}
+
+.textoRed{
+    color:rgb(210, 30, 30);
+    font-weight: bolder;
+}
+
+.cursiva{
+    font-style: italic  ;
+}
+
+.justificado{
+    text-align: justify;
+}
+
+header{
+    top:0;
+    margin-bottom: 10px;
+    position:sticky;
+    height: 50px;    
+}
+
+main{
+    background-image:url(../images/evento.jpg);
+    background-size: cover;
+}
+
+#logoKygo{
+    width: 60px;
+}
+
+footer{
+    height: 80px;
+    background-color: black;
+}
+
+#bannerKygo{
+    width: 100%;
+    border-radius: 5%;
+    
+}
+
+.cont-main{
+    padding: 20px;
+}
+
+.columna {
+    background-color: rgba(1,11, 133, 0.3);
+    border-radius: 5%;
+    padding: 40px; 
+
+}
+
+
+.nav-item{
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 50px;
+}
+.nav-item:hover{
+    transition: 1s;
+    background-color: rgba(175, 175, 175, 0.3);
+}
+
+.contLogos{
+    width: 100%;
+    padding:30px;
+}
+.logosInvitan{
+    width:50%;
+}
+#logoKygoMain{
+    width: 50%;
+}
+.invitan{
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+}
+.subtitulo{
+    border: 2px solid whitesmoke;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0;
+}
+#mapa{
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.reserva{
+    background: linear-gradient(to right, #784600 60%, #FA9000  );
+    margin: 0;
+    padding:20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.reserva:hover{
+    transition: 1s;
+    padding: 35px;
+    color: rgb(232, 132, 132);
+    
+}
+
+/* compras */
+
+.sectores{
+    width: 50%;
+    margin: 15px;
+}
+.sectores:hover{
+    width:55%;
+    opacity: 50%;
+    transition: 2s;
+}
+
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#form{
+    width: 100%;
+}
+
+.form-control{
+    text-align: center;
+}
+.form-control1{
+    text-align: center;
+}
+#botonReserva{
+    width: 70%;
+    padding: 20px;
+    font-size:x-large;
+    font-weight: bolder;
+}
+
+/* pagina compra2 */
+#form2{
+    text-align: center;
+    width: 100%;
+}
+.form-control1{
+    width:100%;
+}
+input{
+    margin-top: 10px;
+}
+.persona{
+    margin: 20px;
+    border-radius: 20px;
+    border: 2px solid white;
+    padding: 10px;
+}
+#persona{
+    border:none;
+}
+#compra{
+    text-decoration: none;
+    color: white;
+}
+#asignarNombres{
+    width: 75%;
+}
+.botonera{
+    padding-top:50px ;
+    display: flex;
+    justify-content: center; 
+}
+.fotoKygo{
+    display: flex;
+    justify-content: center;
+}
+.imgKygo{
+    height: 75%;
+    border-radius: 50px;
+    
+}
