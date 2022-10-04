@@ -199,3 +199,40 @@ input{
     border-radius: 50px;
     
 }
+
+/* pagina PAGO */
+.pago{
+    text-align: center;
+}
+.numeritos{
+    display: flex;
+    justify-content: center;
+
+}
+.contTarjeta{
+    height: 100%
+}
+#creditCard{
+    background-image: url(../images/creditCard.png);
+    background-size: cover; 
+    display: flex;
+    flex-direction: column; 
+    justify-items: end;
+    border: 4px solid white; 
+    border-radius: 50px; 
+}
+#numeroTarjeta{
+    padding-top: 80px;
+    padding-left: 20px;
+}
+#titularTarjeta{
+    padding-top: 10px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+}
+#tipoTarjeta{
+    padding-top: 50px;
+    padding-right: 50px;
+    text-align: right;
+}
+

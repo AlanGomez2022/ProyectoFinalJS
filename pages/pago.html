@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Fuentes de google -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <!-- Libreria Toastify -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+        <!-- Mi hoja de estilos -->
+        <link rel="stylesheet" href="../css/style.css">
+        <!-- BOOTSTRAP -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <title>KYGO South America Tour 2022</title>
+    </head>
+    <body>
+        <header>
+            <nav id="barraNav" class="navbar navbar-expand-lg bg-dark ">
+                <div class="container-fluid">
+                    <img id="logoKygo" src="../images/logoKygo.png" alt="logo de Kygo">
+                <a class="navbar-brand text-light fs-1" href="#">
+                    <h1>K   Y   G   O</h1>
+                </a>
+                <button class="navbar-toggler btn btn-outline-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Spotify</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="https://www.youtube.com/channel/UCCFJeI-2sT_cWgz-QJRgbCw" target="_blank">Videos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-light" >Reservá tus entradas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  text-light" href="https://www.kygomusic.com/" target="_blank">Sitio Web Oficial</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </header>
+        <main class="container-fluid">
+            <br>
+            <h2 class="pago texto">METODO DE PAGO</h2>
+            <div class="row">
+                <div class="col-6 columna" id="cuadroInfo">
+                    <form>
+                        <div class="mb-3 texto">
+                          <label for="exampleInputEmail1" class="form-label">Direccion de Correo</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text text-bg-dark">Aqui enviaremos la factura de su compra de entradas</div>
+                        </div>
+                        <div class="mb-3 texto">
+                          <label for="exampleInputPassword1" class="form-label">Numero de su tarjeta de credito</label>
+                          <input type="number" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 texto">
+                            <label for="exampleInputPassword1" class="form-label">Nombre del titular de la tarjeta</label>
+                            <input type="text" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 texto">
+                            <label for="exampleInputPassword1" class="form-label">Fecha de expiración</label>
+                            <div class="numeritos">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Elija el mes</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                                
+                                <input type="number" class="form-control" id="exampleInputPassword1" placeholder="">
+
+                            </div>
+                        </div>
+                        <div class="mb-3 texto">
+                            <label for="exampleInputPassword1" class="form-label">CVV</label>
+                            <div class="numeritos">
+                                <input type="number" class="form-control" id="exampleInputPassword1">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Elija su tipo de tarjeta</option>
+                                    <option value="1">Visa</option>
+                                    <option value="2">MasterCard</option>
+                                    <option value="3">American Express</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Comprar</button>
+                      </form>
+                </div>
+                <div class="col-6 columna contTarjeta" id="cuadroInfo">
+                    
+                    <div class="container-fluid" id="creditCard">
+                        <div class="row texto" id="tipoTarjeta">
+                            <h2>VISA</h2>
+                        </div>
+                        <div class="row texto" id="numeroTarjeta">
+                            <h5>Numero de la tarjeta</h5>
+                            <h3>#### #### #### ####</h3>
+                        </div>
+                        <br>
+                        <div class="row texto" id="titularTarjeta">
+                                <h5>Nombre del titular de la tarjeta</h5>
+                                <h3>blabalbal</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+
+          
+            <div class="container-fluid columna" id="cajota">
+                <div  class="texto" id="cajita"></div>
+            </div>
+        </main>
+        <footer >
+            <footer class="bg-dark text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-3" >
+                <p class="texto"> © 2022 Copyright : Powered by EntradasAlan.com</p>
+            </div>
+            <!-- Copyright -->
+            </footer>
+        </footer>
+        
+        <!-- LIBRERIAS -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
+        <!-- mi JavaScript -->
+        <script src="../js/app3.js"></script>
+        <!-- BOOSTRAP -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    </body>
+</html>

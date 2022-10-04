@@ -80,10 +80,15 @@ boton.onclick = () =>{
     let radio2 = document.getElementById("exampleRadios2");
     compraTicket.tipoEntrada = radio1.checked ?  radio1.value  : radio2.value;
     compraTicket.cantidad = document.getElementById("select").value
-    const {sector, tipoEntrada, cantidad} = compraTicket
+    const {sector, tipoEntrada, cantidad} = compraTicket //destructuring
     localStorage.setItem("sector",sector)
+    let precio = sector=="Delantero"? CAMPODELANTERO : CAMPOGRAL; // me guarda el precio por sector
+    localStorage.setItem("precio",precio)
     localStorage.setItem("tipoEntrada", tipoEntrada)
+    let descuento= tipoEntrada=="clubPersonal"? CLUB : 0; //me guarda el descuento
+    localStorage.setItem("descuento",descuento)
     localStorage.setItem("cantidad",cantidad)
+    localStorage.setItem("costosExtra", COSTOS)
     
       swal({
         title:"¿Estas seguro que queres realizar la siguiente reserva?",
