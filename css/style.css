@@ -236,3 +236,11 @@ input{
     text-align: right;
 }
 
+/* RELOJ */
+.calendar{
+    display:flex;
+    align-content: start;
+}
+#calendario{
+    width: 100%;
+}
