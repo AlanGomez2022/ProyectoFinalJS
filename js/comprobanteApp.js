@@ -87,7 +87,7 @@ people.innerHTML=`<p class="texto">  ${grupo}<p>`
 //y muestro el total de la compra
 
 let subtotal = document.getElementById("subtotal")
-subtotal.innerText=`Subtotal de la compra - $ ${precioSector*personas.length}`
+subtotal.innerText=`Subtotal de la compra - $ ${(precioSector*personas.length)+parseInt(costosAdmin)}`
 
 let totalCompra = document.getElementById("total")
 if (descuento==0){
