@@ -57,7 +57,7 @@
             <h2 class="pago texto">METODO DE PAGO</h2>
             <div class="row">
                 <div class="col-6 columna" id="cuadroInfo">
-                    <form>
+                    <form id="form">
                         <div class="mb-3 texto">
                           <label for="exampleInputEmail1" class="form-label">Direccion de Correo</label>
                           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -65,7 +65,7 @@
                         </div>
                         <div class="mb-3 texto">
                           <label for="exampleInputPassword1" class="form-label">Numero de su tarjeta de credito</label>
-                          <input type="number" class="form-control" id="nroTarjeta" max="16">
+                          <input type="number" class="form-control" id="nroTarjeta">
                         </div>
                         <div class="mb-3 texto">
                             <label for="exampleInputPassword1" class="form-label">Nombre del titular de la tarjeta</label>
@@ -106,7 +106,7 @@
                                 </select>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Comprar</button>
+                        <button type="submit" id="botonBuy" class="btn btn-primary">Comprar</button>
                       </form>
                 </div>
                 <div class="col-6 columna contTarjeta" id="cuadroInfo">
@@ -158,7 +158,7 @@
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
         <!-- mi JavaScript -->
-        <script src="../js/app3.js"></script>
+        <script src="../js/pagoApp.js"></script>
         <!-- BOOSTRAP -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>

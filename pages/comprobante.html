@@ -52,50 +52,66 @@
                 </div>
             </nav>
         </header>
-        <main class="container-fluid">
+        <main class="container-fluid"><br><br>
             <div class="row">
-                <h2 id="kygo">ASIGNE LOS DATOS DE LAS PERSONAS A LAS ENTRADAS</h2>
-            <div class="col-12 col-lg-6 columna" id="cuadroInfo">
-                <div class="row botonera">
-                        <button id="asignarNombres" type="button" class="btn btn-primary">ASIGNAR DATOS</button>    
+                <div class="col-12 text-center contenedor">
+                    <img id="bandera" src="../images/argFlag.png" alt="bandera argentina">
+                    <h2 class="texto tituloShow">KYGO - South America Tour 2022 </h2>
+                    <h2 class="texto">19 de Noviembre - 21 hs - Costanera Sur</h2>
                 </div>
-                <div class="row">
-                    <form id="form2">
-                        <div class="container-fluid persona">
-                            <label class="form-label texto">Entrada N°1 (COMPRADOR) - Nombre y Apellido</label>
-                            <input type="text" class="form-control" placeholder="coloque nombre completo" required >
-                            <label class="form-label2 texto">DNI N°1</label>
-                            <input type="number" class="form-control1" required >
-                        </div>
-                        <div class="container-fluid persona">
-                            <label class="form-label texto">Entrada N°2 - Nombre y Apellido</label>
-                            <input type="text" class="form-control" placeholder="coloque nombre completo"required>
-                            <label class="form-label2 texto">DNI N°2</label>
-                            <input type="number" class="form-control1"required >
-                        </div>
-                        <div class="container-fluid persona">
-                            <label class="form-label texto">Entrada N°3 - Nombre y Apellido</label>
-                            <input type="text" class="form-control" placeholder="coloque nombre completo"required>
-                            <label class="form-label2 texto">DNI N°3</label>
-                            <input type="number" class="form-control1"required >
-                        </div>
-                        <div class="container-fluid persona">
-                            <label class="form-label texto">Entrada #4 - Nombre y Apellido</label>
-                            <input type="text" class="form-control" placeholder="coloque nombre completo" required>
-                            <label class="form-label2 texto">DNI #4</label>
-                            <input type="number" class="form-control1"required>
-                        </div>
-                        
-                        <div>   
-                        <button type="submit" class="btn btn-primary mb-3 texto" id="botonCompra">COMPRAR</button>
-                        </div>
-                    </form>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="texto text-center contenedor">Se ha generado un reserva con fecha y hora</h3>
                 </div>
+            </div>
+            <div class="container-fluid row text-center">
+                <div class="col-2 contReloj">
+                    <img id="logoReloj" src="../images/clock.png" alt="logo reloj">
                 </div>
-                <div class="col-12 col-lg-6 fotoKygo columna">
-                    <img class="imgKygo" src="../images/kygo.png" alt="silueta de kygo">
+                <div class="col-8 text-white" id="reloj">
+                    <!-- aca se carga el reloj -->
                 </div>
-            </main>
+                <div class="col-2 contCalendar">
+                    <img id="logoCalendar" src="../images/calendar.png" alt="logo calendario">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 contenedor">
+                    <h3 class="texto text-center">Datos del pago</h3>
+                </div> 
+            </div>
+            <div class="row">
+                <div class="col-6 contendor" id="datosCompra">
+                    <h4 class="texto text-decoration-underline">Datos de Compra</h4>
+                    <h5 id="comprador" class="texto"></h5>
+                    <h4 class="texto">E-mail</h4>
+                    <p class="texto" id="mail"></p>
+                    <h4 class="texto">Datos de la tarjeta</h4>
+                    <p class="texto" id="tipoTarjeta"></p>
+                    <h5 class="texto">Numero de tarjeta finalizado en:</h5>
+                    <p class="texto" id="nroCard"></p>
+                    <p></p>
+                </div>
+                <div class="col-6 contendor" id="datosCompra">
+                    <h3 class="texto text-decoration-underline">Datos de Reserva</h3>
+                    <h4 class="texto">Cantidad de Entradas</h4>
+                    <p class="texto" id="cantidad"></p>
+                    <h4 class="texto">Sector</h4>
+                    <p class="texto" id="lugar"></p>
+                    <h4 class="texto">Personas</h4>
+                    <div id="personas">              
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="texto col-12 contenedor">
+                    <h3 class="texto" id="subtotal"></h3>
+                    <h2 class="texto" id="total"></h2>
+                </div>
+            </div>
+
+        </main>
         <footer >
             <footer class="bg-dark text-center text-lg-start">
             <!-- Copyright -->
@@ -110,7 +126,7 @@
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> 
         <!-- mi JavaScript -->
-        <script src="../js/compra2App.js"></script>
+        <script src="../js/comprobanteApp.js"></script>
         <!-- BOOSTRAP -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>

@@ -40,6 +40,7 @@ header{
 main{
     background-image:url(../images/evento.jpg);
     background-size: cover;
+    height: 100%;
 }
 
 #logoKygo{
@@ -243,4 +244,36 @@ input{
 }
 #calendario{
     width: 100%;
+}
+
+/* css de la pagina comprobante */
+#reloj{
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(1,11, 133, 0.3);
+}
+.contenedor{
+        background-color: rgba(1,11, 133, 0.3);
+        border-radius: 5%;
+        padding: 5px;
+        margin: 5px; 
+        border-radius: 20px;
+}
+#bandera{
+    width: 10%;
+}
+.tituloShow{
+    font-size: 50px;
+}
+#logoReloj {
+    width: 70%;
+}
+#logoCalendar {
+    width: 70%;
+}
+.contReloj{
+    text-align: center;
+} 
+.contCalendar{
+    text-align: left;
 }
